@@ -71,7 +71,7 @@ internal object DependencyUtils {
         }
         configuration.resolutionStrategy.force(
             "${groupString}:react-android:${versionString}",
-            "${groupString}:flipper-integration:${versionString}",
+            "${groupString}:flipper-integration:0.182.0",
         )
         if (!(eachProject.findProperty(INTERNAL_USE_HERMES_NIGHTLY) as? String).toBoolean()) {
           // Contributors only: The hermes-engine version is forced only if the user has
